@@ -1,0 +1,96 @@
+/* For the full background and container layout */
+.homepage-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, white, black); /* Gradient from white to black */  }
+  
+  .main-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem; /* Corresponds to Tailwind's p-6 */
+    background-color: #ffffff00; /* Black background */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Tailwind shadow-md */
+    border-radius: 0.5rem; /* Tailwind rounded-lg */
+    margin-top: 1.5rem; /* Tailwind mt-6 */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 1.25rem; /* Tailwind's text-xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    margin-bottom: 1rem; /* Tailwind's mb-4 */
+  }
+  
+  .section {
+    margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+  }
+  
+  .transcription-box {
+    margin-top: 1.5rem; /* Tailwind's mt-6 */
+    padding: 1rem; /* Tailwind's p-4 */
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+    border-radius: 0.375rem; /* Tailwind's rounded */
+    transition: all 0.3s ease-in-out; /* Tailwind's transition-all duration-300 */
+  }
+  
+  .transcription-box.hidden {
+    opacity: 0;
+  }
+  
+  .transcription-box.visible {
+    opacity: 1;
+  }
+  
+  .transcription-text {
+    margin-top: 0.5rem; /* Tailwind's mt-2 */
+    color: #2d3748; /* Tailwind's text-gray-800 */
+  }
+  
+  .save-button {
+    margin-top: 1.5rem; /* Tailwind's mt-6 */
+    background-color: #4299e1; /* Tailwind's bg-blue-500 */
+    color: white;
+    padding: 0.5rem 1rem; /* Tailwind's px-4 py-2 */
+    border-radius: 0.25rem; /* Tailwind's rounded */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .save-button:hover {
+    background-color: #3182ce; /* Tailwind's hover:bg-blue-600 */
+    transform: scale(1.05); /* Tailwind's transform hover:scale-105 */
+  }
+  
+  .homepage-container {
+    position: relative;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex-grow: 1; /* Allows the main content to take up the remaining space, pushing the footer down */
+  }
+  
+  footer {
+    width: 100%;
+    padding: 1rem 0; /* Tailwind's py-4 */
+    background-color: #2d3748; /* Tailwind's bg-gray-800 */
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  
+  

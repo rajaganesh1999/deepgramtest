@@ -1,0 +1,18 @@
+.mt-4 {
+    font: 1em sans-serif;
+    color: #ffffff; /* Default color for other text */
+    font-size: medium;
+}
+
+.recording-status {
+    color: #110101; /* Change this to the desired color */
+    font-weight: bold; /* Optional: makes the text bold */
+}
+.recording-icon {
+    margin-right: 8px; /* Space between the video and text */
+    vertical-align: middle; /* Align the video with the text */
+}
+.stopped-icon {
+    filter: grayscale(100%); /* Optional: make it grayscale to indicate stopped status */
+  }
+  

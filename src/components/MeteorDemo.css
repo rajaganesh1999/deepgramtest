@@ -1,0 +1,50 @@
+/* MeteorDemo.css */
+.meteor-demo-container {
+    position: absolute; /* Ensures it covers the entire background */
+    inset: 0; /* Fill the entire parent element */
+    display: flex; /* Enable flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    overflow: hidden; /* Hide anything overflowing the container */
+    border-radius: 0.5rem; /* Rounded corners */
+    background: var(--background); /* Use the background variable */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 0; /* Make sure it's below the main content */
+}
+  
+.meteor-demo-title {
+    pointer-events: none; /* Ignore pointer events */
+    white-space: pre-wrap; /* Allow wrapping of the text */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), rgba(255, 253, 253, 0.368)); /* Gradient background */
+    background-clip: text; /* Clip the background to text */
+    text-align: center; /* Center the text */
+    font-size: 4rem; /* Adjust the font size */
+    font-weight: 700; /* Bold font weight */
+    line-height: 1; /* Adjust line height */
+    color: transparent; /* Make the text transparent for gradient effect */
+    animation: fadeInOut 4s ease-in-out infinite; /* Fade in and out effect */
+    margin-top: 130px; /* Adjusted margin to move the title down slightly */
+}
+@media (max-width: 368px) {
+    .meteor-demo-title {
+        font-size: 3rem; /* Adjust size for smaller screens */
+        margin-top: 280px; /* Reduce margin for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .meteor-demo-title {
+        font-size: 3rem; /* Adjust size for smaller screens */
+        margin-top: 180px; /* Reduce margin for smaller screens */
+    }
+}
+
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* Fully transparent */
+    }
+    50% {
+        opacity: 1; /* Fully opaque */
+    }
+}
